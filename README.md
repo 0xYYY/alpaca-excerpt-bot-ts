@@ -14,7 +14,8 @@ flowchart LR
     A(Daily Cron Jub <br> \(Cloud Scheduler\))
     B(Topic <br> \(Cloud Pub/Sub\))
     C(Bot Script <br> \(Cloud Functions\))
-    A -- publish --> B <-- subscribe -- C
+    A -- publish --> B
+    C -- subscribe --> B
 ```
 
 ## Requirements
