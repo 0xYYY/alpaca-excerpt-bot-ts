@@ -18,6 +18,10 @@ flowchart LR
     C -- subscribe --> B
 ```
 
+The cron job will publish an event to the topic daily, triggering the bot function to execute its
+logic to crawl the Round Up content from DefiLlama's website, extract relevant news, and then send
+an excerpt to my TG channel.
+
 ## Requirements
 
 -   A [Google Cloud](https://cloud.google.com) account.
