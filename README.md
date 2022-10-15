@@ -11,9 +11,9 @@ platform). The following chart describe the overall architecture.
 
 ```mermaid
 flowchart LR
-    A(Daily Cron Jub <br> (Cloud Scheduler))
-    B(Topic <br> (Cloud Pub/Sub))
-    C(Bot Script <br> (Cloud Functions))
+    A(Daily Cron Jub <br> \(Cloud Scheduler\))
+    B(Topic <br> \(Cloud Pub/Sub\))
+    C(Bot Script <br> \(Cloud Functions\))
     A -- publish --> B <-- subscribe -- C
 ```
 
