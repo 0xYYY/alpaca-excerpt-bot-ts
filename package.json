@@ -1,0 +1,34 @@
+{
+    "name": "alpaca-excerpt-bot",
+    "version": "0.0.1",
+    "description": "Forward excerpts of specific topics from DefiLlama Round Upto my Telegram channel.",
+    "main": "build/src/index.js",
+    "author": "0xYYY@protonmail.com",
+    "license": "MIT",
+    "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "^3.3.1",
+        "@types/node": "^14.11.2",
+        "@types/node-telegram-bot-api": "^0.57.1",
+        "@typescript-eslint/eslint-plugin": "^5.40.0",
+        "@typescript-eslint/parser": "^5.40.0",
+        "concurrently": "^7.4.0",
+        "eslint": "^8.25.0",
+        "eslint-config-prettier": "^8.5.0",
+        "nodemon": "^2.0.20",
+        "prettier": "2.7.1",
+        "typescript": "~4.7.0"
+    },
+    "scripts": {
+        "clean": "rm -rf build",
+        "fix": "yarn eslint --fix --ext .ts src/ && yarn prettier --write src/",
+        "compile": "tsc",
+        "deploy": "yarn run compile && bash scripts/deploy.sh"
+    },
+    "dependencies": {
+        "@google-cloud/functions-framework": "^3.1.2",
+        "@google-cloud/pubsub": "^3.2.0",
+        "axios": "^1.1.2",
+        "cheerio": "^1.0.0-rc.12",
+        "node-telegram-bot-api": "^0.59.0"
+    }
+}
