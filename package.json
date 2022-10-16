@@ -22,7 +22,8 @@
         "clean": "rm -rf build",
         "fix": "yarn eslint --fix --ext .ts src/ && yarn prettier --write src/",
         "compile": "tsc",
-        "deploy": "yarn run compile && bash scripts/deploy.sh"
+        "deploy": "yarn run compile && bash scripts/deploy.sh",
+        "trigger": "gcloud pubsub topics publish alpaca-excerpt-bot --message=a"
     },
     "dependencies": {
         "@google-cloud/functions-framework": "^3.1.2",
