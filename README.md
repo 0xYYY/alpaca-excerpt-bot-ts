@@ -39,6 +39,8 @@ yarn compile
 yarn deploy
 ```
 
+To manually trigger the bot, run `yarn trigger`.
+
 ## License
 
 [MIT](./LICENSE)
