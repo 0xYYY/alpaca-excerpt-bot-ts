@@ -29,7 +29,7 @@
         "clean": "rm -rf build",
         "lint": "yarn eslint --fix --ext .ts src/ && yarn prettier --write src/",
         "build": "tsc",
-        "deploy": "yarn run compile && bash scripts/deploy.sh",
-        "trigger": "gcloud pubsub topics publish noon --message=0"
+        "deploy": "yarn build && bash scripts/deploy.sh",
+        "trigger": "gcloud pubsub topics publish noon --attribute=alpaca=true"
     }
 }

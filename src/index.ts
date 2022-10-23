@@ -54,9 +54,14 @@ async function extractExcerpt(): Promise<string> {
     return result;
 }
 
-export const handlePubSub: EventFunction = async (_message: PubsubMessage, _context: Context) => {
+export const handlePubSub: EventFunction = async (message: PubsubMessage, _context: Context) => {
+    const data = message.attributes || {};
+    if (!("alpaca" in data)) {
+        return;
+    }
+
     // Extract excerpt from https://defillama.com/roundup.
-    let excerpt;
+    let excerpt: string;
     try {
         excerpt = await extractExcerpt();
     } catch (e) {
