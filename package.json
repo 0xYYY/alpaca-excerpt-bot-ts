@@ -23,7 +23,7 @@
         "fix": "yarn eslint --fix --ext .ts src/ && yarn prettier --write src/",
         "compile": "tsc",
         "deploy": "yarn run compile && bash scripts/deploy.sh",
-        "trigger": "gcloud pubsub topics publish alpaca-excerpt-bot --message=a"
+        "trigger": "gcloud pubsub topics publish noon --message=0"
     },
     "dependencies": {
         "@google-cloud/functions-framework": "^3.1.2",

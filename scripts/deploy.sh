@@ -16,10 +16,10 @@ ENVVARS=(
 )
 
 SECRETS=(
-    "TELEGRAM_BOT_TOKEN=TELEGRAM_BOT_TOKEN:latest"
+    "TOKEN=ALPACA_TELEGRAM_BOT_TOKEN:latest"
 )
 
 gcloud functions deploy alpaca-excerpt-bot --region=us-central1 --memory=128Mi --runtime nodejs16 \
-    --allow-unauthenticated --entry-point=handlePubSub --trigger-topic=alpaca-excerpt-bot \
+    --allow-unauthenticated --entry-point=handlePubSub --trigger-topic=noon \
     --set-env-vars="$(join_array "${ENVVARS[@]}")" --set-secrets="$(join_array "${SECRETS[@]}")" \
     --gen2
