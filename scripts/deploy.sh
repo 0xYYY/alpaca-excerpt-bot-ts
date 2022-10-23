@@ -16,7 +16,7 @@ ENVVARS=(
 )
 
 SECRETS=(
-    "TOKEN=ALPACA_TELEGRAM_BOT_TOKEN:latest"
+    "BOT_TOKEN=ALPACA_TELEGRAM_BOT_TOKEN:latest"
 )
 
 gcloud functions deploy alpaca-excerpt-bot --region=us-central1 --memory=128Mi --runtime nodejs16 \

@@ -77,7 +77,7 @@ export const handlePubSub: EventFunction = async (message: PubsubMessage, _conte
     // Send excerpt to channel.
     const botToken = process.env.BOT_TOKEN;
     if (botToken === undefined) {
-        log("error", "Environment variable `TELEGRAM_BOT_TOKEN` is not set.");
+        log("error", "Environment variable `BOT_TOKEN` is not set.");
         return;
     }
     const channelId = Number(process.env.CHANNEL_CHAT_ID);
