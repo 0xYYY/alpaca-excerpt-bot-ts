@@ -34,8 +34,8 @@ an excerpt to my TG channel.
 ## Deploy
 
 ```bash
-yarn fix
-yarn compile
+yarn lint
+yarn build
 yarn deploy
 ```
 
