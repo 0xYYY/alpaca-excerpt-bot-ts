@@ -12,7 +12,7 @@ function join_array {
 }
 
 ENVVARS=(
-    "CHANNEL_CHAT_ID=-1001320803687"
+    "CHANNEL_CHAT_ID=-1001847278249"
 )
 
 SECRETS=(
