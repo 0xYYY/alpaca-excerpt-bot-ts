@@ -49,6 +49,10 @@ Obtain a [Telegram bot token](https://core.telegram.org/bots) and store it in Go
 > permissions, e.g. granting default service account access to Secret Manager. Simply follow the
 > hints and set up the required permissions to proceed.
 
+## Contribution
+
+Absolutely welcome. Also feel free to reach out to discuss the project or anything else!
+
 ## License
 
 [MIT](./LICENSE)
