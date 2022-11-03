@@ -1,7 +1,6 @@
 # 🦙 Alpaca Excerpt Bot
 
-Extract news under topics of interest (MEV, security, development) from [DefiLlama Round Up](https://defillama.com/roundup)
-and forward to my own Telegram [channel](https://t.me/iq30_tg).
+Extract news under topics of interest (MEV, security, development) from [DefiLlama Round Up](https://defillama.com/roundup) and forward to a [DefiLlama Round Up for Devs](https://t.me/defillama_roundup_dev).
 
 ## Architecture
 
