@@ -25,10 +25,10 @@ async function extractExcerpt(): Promise<string> {
     let current_topic = "START";
     // The `div` after the title `h1` contains the actual content.
     const content = $('h1:contains("Daily news roundup with the 🦙") + div');
-    // `h3`: topic titles, `a`: items.
-    content.find("h3, a").each((_, e) => {
+    // `h2` and `h3`: topic titles, `a`: items.
+    content.find("h2, h3, a").each((_, e) => {
         let line: string;
-        if (e.name === "h3") {
+        if (e.name === "h2" || e.name === "h3") {
             const topic = $(e).text().trim();
             current_topic = topic;
             line = `*${topic}*`;
