@@ -1,6 +1,6 @@
 # 🦙 Alpaca Excerpt Bot
 
-> Deprecated, ~~because I suck at TS~~, for maintain version of this bot, see [this repo](https://github.com/0xYYY/alpaca-excerpt-bot).
+> Deprecated, ~~because I suck at TS~~, for maintained version of this bot, see [this repo](https://github.com/0xYYY/alpaca-excerpt-bot).
 
 Extract news under topics of interest (MEV, security, development) from [DefiLlama Round Up](https://defillama.com/roundup) and forward to [DefiLlama Round Up for Devs](https://t.me/defillama_roundup_dev).
 
